@@ -1,0 +1,99 @@
+:root {
+    --primary-text: #003366;
+    --text: #00509e;
+    --form-bg: #f0f8ff;
+    --bg: #e0efff;
+    --error-color: #ff4f61;
+  }
+  
+  [data-theme="light"] {
+    --primary-text: #003366;
+    --text: #00509e;
+    --form-bg: #210856;
+    --bg: #493c65;
+  }
+  
+  * {
+    font-family: "Roboto", sans-serif;
+    transition: background-color 600ms, color 600ms;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    height: 130vh;
+  }
+  
+  .form-container {
+    width: 300px;
+    padding: 20px;
+    background-color: var(--form-bg);
+    color: var(--text);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 100px; 
+    display: block;
+    margin: 0 auto 10px; 
+  }
+  
+  
+  .form-header a {
+    color: var(--primary-text);
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  input {
+    color: var(--primary-text);
+    margin: 10px 0;
+    border: 1px solid var(--text);
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--bg);
+  }
+  
+  input.error {
+    border: 2px solid var(--error-color);
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    font-size: 0.8em;
+    height: 16px;
+  }
+  
+  button {
+    border-radius: 8px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #00509e;
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(0.96);
+  }
